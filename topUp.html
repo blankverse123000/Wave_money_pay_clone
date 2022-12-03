@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ဖုန်းငွေဖြည့်</title>
+    <link rel="icon" href="./img/wm-logo.png" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-warning pt-2">
+      <div class="d-flex justify-content-between m-3">
+        <a class="btn text-decoration-none" href="index.html"
+          ><i class="bi bi-arrow-left fs-3"></i
+        ></a>
+        <h4>ဖုန်းငွေဖြည့်</h4>
+        <button
+          class="btn text-center"
+          data-bs-toggle="modal"
+          data-bs-target="#cancleTopUp"
+        >
+          <i class="bi bi-x-lg fs-3 text-danger"></i>
+        </button>
+      </div>
+    </header>
+    <!-- Top Up Cancle Modal  -->
+    <div class="modal fade" id="cancleTopUp" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0">
+            <h4>ဖျက်သိမ်းပါ</h4>
+          </div>
+          <div class="modal-body">
+            ယခု လုပ်ငန်းစဉ်ကို ဖျက်သိမ်းပြီး သင်ဖြည့်ထားသော အချက်အလက်များကိုပါ
+            သိမ်းဆည်းမည် မသတ်ပါ။
+          </div>
+          <div class="modal-footer border-0">
+            <a href="" class="text-decoration-none me-3" data-bs-dismiss="modal"
+              >မလုပ်တော့ပါ</a
+            >
+            ‌<a href="index.html" class="text-decoration-none">အိုကေ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row justify-content-between btn-group w-100">
+          <button
+            id="topUp"
+            class="col-6 text-center p-3 bg-transparent linkBorder"
+          >
+            <span class="">TOPUP</span>
+          </button>
+          <button
+            id="packs"
+            class="col-6 text-center p-3 bg-transparent unacitveLinkBorder"
+          >
+            <span class="">DATA PACKS</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container my-4 w-100 d-flex">
+        <i class="bi bi-phone me-2 text-secondary fs-4"></i>
+        <div
+          class="border-bottom border-primary border-2 justify-content-between w-100 d-flex justify-content-around"
+        >
+          <input type="tel" class="border-0 w-100" value="09882197246" />
+          <a
+            href="
+          "
+            ><i class="bi bi-person-video2 text-secondary fs-4"></i
+          ></a>
+        </div>
+      </div>
+      <div class="container">
+        <h4 class="">အော်ပရေတာ</h4>
+        <br />
+        <div class="row align-items-center justify-content-evenly mb-4">
+          <div class="col-3">
+            <img src="./img/MPT_Logo.svg (1).png" alt="" class="w-75" />
+          </div>
+          <div class="col-3">
+            <img src="./img/logo.webp" alt="" class="w-75" />
+          </div>
+          <div class="col-3">
+            <img src="./img/Ooredoo-image.jpg" alt="" class="w-75 rounded-2" />
+          </div>
+          <div class="col-3">
+            <img src="./img/images.png" alt="" class="w-75 rounded-2" />
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <!-- TopUP Display  -->
+      <div class="container pb-5 mb-3" id="topUPDisplay">
+        <h4>ငွေပမာဏထည့်ပါ</h4>
+        <small class="">လက်ကျန်ငွေ <span>******</span> ကျပ်</small>
+        <div class="row my-3 justify-content-evenly">
+          <div class="col-4">
+            <input type="radio" name="bill" id="bill_1000" />
+            <label for="bill_1000">1000</label>
+          </div>
+          <div class="col-4">
+            <input type="radio" name="bill" id="bill_3000" />
+            <label for="bill_3000">3000</label>
+          </div>
+          <div class="col-4">
+            <input type="radio" name="bill" id="bill_5000" />
+            <label for="bill_5000">5000</label>
+          </div>
+        </div>
+        <div class="row my-3 justify-content-evenly">
+          <div class="col-4">
+            <input type="radio" name="bill" id="bill_10000" />
+            <label for="bill_10000">10000</label>
+          </div>
+          <div class="col-4">
+            <input type="radio" name="bill" id="bill_20,000" />
+            <label for="bill_20,000">20,000</label>
+          </div>
+          <div class="col-4">
+            <input type="radio" name="bill" id="bill_30,000" />
+            <label for="bill_30,000">30,000</label>
+          </div>
+        </div>
+      </div>
+      <!-- pack Display  -->
+      <div class="container d-none pb-5 mb-3" id="packDisplay">
+        <h4>Packageရွေးပါ</h4>
+        <small class="">လက်ကျန်ငွေ <span>******</span> ကျပ်</small>
+
+        <div class="d-flex align-items-center my-1">
+          <input type="radio" name="package" id="TayThanThar" class="me-2" />
+          <label for="TayThanThar">
+            <small>149.0ကျပ်</small>
+            <p>Daily Tay Tan Thar Data Pack</p>
+          </label>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <input type="radio" name="package" id="DailyShalKyi" class="me-2" />
+          <label for="DailyShalKyi">
+            <small>149.0ကျပ်</small>
+            <p>Daily Shal Kyi Data pack</p>
+          </label>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <input type="radio" name="package" id="Data_Carry_250" class="me-2" />
+          <label for="Data_Carry_250">
+            <small>699.0ကျပ်</small>
+            <p>Data Carry Plus 250MB</p>
+          </label>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <input type="radio" name="package" id="NightTime" class="me-2" />
+          <label for="NightTime">
+            <small>899.0ကျပ်</small>
+            <p>Night Time - 7 Nights</p>
+          </label>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <input type="radio" name="package" id="3000Ks_Htaw_B" class="me-2" />
+          <label for="3000Ks_Htaw_B">
+            <small>3000.0ကျပ်</small>
+            <p>3000Ks=30000Ks 10X Htaw B (15 Days)</p>
+          </label>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <input type="radio" name="package" id="2160MB" class="me-2" />
+          <label for="2160MB">
+            <small>4499.0ကျပ်</small>
+            <p>Data Carrt Plus 2160MB</p>
+          </label>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <input type="radio" name="package" id="NightTime_30" class="me-2" />
+          <label for="NightTime_30">
+            <small>3499.0ကျပ်</small>
+            <p>Night Time - 30 Nights</p>
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-white fixed-bottom px-4">
+        <button class="btn btn-secondary mb-3 mx-auto w-100">သေချာပါသည်</button>
+      </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

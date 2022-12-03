@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wave_Pay</title>
+    <link rel="icon" href="./img/wm-logo.png" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-warning">
+    <header class="">
+      <div class="d-flex align-items-center">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#Wave"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list fs-1"></i>
+        </button>
+        <h2 class="mx-auto">
+          <img src="./img/wm-logo.png" alt="" style="width: 50px" />
+          <small class="text-capitalize text-primary">Waypay Clone</small>
+        </h2>
+      </div>
+    </header>
+
+    <!-- offcanvas Box -->
+    <div
+      class="offcanvas offcanvas-start bg-light w-auto"
+      tabindex="-1"
+      id="Wave"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header d-block text-center">
+        <i class="bi bi-person-circle fs-3 text-primary"></i>
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">User Name</h4>
+        <div>*****MMK</div>
+        <div>
+          User Level 2
+          <i class="bi bi-question-circle-fill text-primary"></i>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled align-items-md-center">
+          <li class="border-bottom border-primary p-3">
+            <a href="#" class="text-decoration-none text-dark"
+              ><i class="bi bi-person-fill fs-4 p-4 align-middle"></i
+              >ကိုယ်ရေးအချက်အလက်</a
+            >
+          </li>
+          <li class="border-bottom border-primary p-3">
+            <a href="#" class="text-decoration-none text-dark"
+              ><i class="bi bi-cash-coin fs-4 p-4 align-middle"></i>ဝန်ဆောင်ခ</a
+            >
+          </li>
+          <li class="border-bottom border-primary p-3">
+            <a href="#" class="text-decoration-none text-dark"
+              ><i class="bi bi-question-circle fs-4 p-4 align-middle"></i>
+              အကူအညီ</a
+            >
+          </li>
+          <li class="border-bottom border-primary p-3">
+            <a href="#" class="text-decoration-none text-dark"
+              ><i class="bi bi-file-earmark fs-4 p-4 align-middle"></i
+              >စည်းကမ်းနှင့်သက်မှတ်ချက်</a
+            >
+          </li>
+          <li class="border-bottom border-primary p-3">
+            <a href="#" class="text-decoration-none text-dark"
+              ><i class="bi bi-gear fs-4 p-4 align-middle"></i> ပြင်ဆင်ရန်</a
+            >
+          </li>
+          <li class="border-bottom border-primary p-3">
+            <a href="#" class="text-decoration-none text-dark">
+              <i class="bi bi-box-arrow-right fs-4 p-4 align-middle"></i
+              >ထွက်မည်</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--header Content  -->
+    <section class="container">
+      <i
+        class="bi bi-person-fill fs-1 text-primary bg-white rounded-circle"
+      ></i>
+      <h4>
+        User Name <a href=""><i class="bi bi-eye-slash text-dark"></i></a>
+      </h4>
+      <p>********ကျပ်</p>
+
+      <p class="bg-dark bg-opacity-25 text-center w-25 rounded-3 p-0">
+        LEVEL 2
+      </p>
+    </section>
+
+    <!-- ငွေလွှဲ -- ငွေသွင်း ငွေထုတ် -->
+    <section class="mt-5 bg-light pb-5">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-center mx-auto bg-light rounded shadow-lg"
+        >
+          <div
+            class="col-3 offset-1 my-3 border-end border-dark border-opacity-25"
+          >
+            <a
+              href="#offcanvasBottom"
+              class="text-decoration-none text-secondary"
+              data-bs-toggle="offcanvas"
+            >
+              <i class="bi bi-cash-stack fs-1 fa-fw position-relative">
+                <i
+                  class="bi bi-telegram text-primary bg-white position-absolute top-0 fs-4 start-50 rounded-circle"
+                  style="line-height: 0"
+                >
+                </i>
+              </i>
+              <p>ငွေလွှဲ</p>
+            </a>
+          </div>
+          <div
+            class="col-3 offset-1 my-3 border-end border-dark border-opacity-25"
+          >
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-receipt fs-1 fa-fw position-relative">
+                <i
+                  class="bi bi-clock-fill text-primary bg-white position-absolute top-0 fs-4 start-50 rounded-circle"
+                  style="line-height: 0"
+                >
+                </i>
+              </i>
+              <p>စာရင်း</p>
+            </a>
+          </div>
+          <div class="col-3 offset-1 my-3">
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-wallet2 fs-1 fa-fw position-relative">
+                <i
+                  class="bi bi-coin text-primary bg-white position-absolute top-0 fs-4 start-50 rounded-circle"
+                  style="line-height: 0"
+                >
+                </i>
+              </i>
+              <p>ငွေသွင်း/ထုတ်</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- phone bill top up and ...  -->
+      <div class="container py-3 my-3 bg-light rounded shadow-lg mb-auto">
+        <div class="row my-3">
+          <div class="col-3 offset-1">
+            <a href="topUp.html" class="text-decoration-none text-secondary">
+              <i class="bi bi-phone-flip fs-1"></i>
+              <p>ဖုန်းငွေဖြည့်</p>
+            </a>
+          </div>
+          <div class="col-3 offset-1">
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-coin fs-1"></i>
+              <p>ချေးငွေ</p>
+            </a>
+          </div>
+          <div class="col-3 offset-1">
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-router fs-1"></i>
+              <p>အင်တာနက်ဘေလ်</p>
+            </a>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-3 offset-1">
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-ticket-perforated fs-1"></i>
+              <p>လက်မှတ်</p>
+            </a>
+          </div>
+          <div class="col-3 offset-1">
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-controller fs-1"></i>
+              <p>ဂိမ်း</p>
+            </a>
+          </div>
+          <div class="col-3 offset-1">
+            <a href="#" class="text-decoration-none text-secondary">
+              <i class="bi bi-three-dots fs-1"></i>
+              <p>အခြား</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ငွေလွှဲ offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom h-50 p-2 rounded-2"
+      tabindex="-1"
+      id="offcanvasBottom"
+      data-bs-backdrop="static"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header justify-content-between">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="">
+          <div class="position-relative mb-2">
+            <img
+              src="./img/kyats.jpg"
+              alt=""
+              width="px35"
+              height="25px"
+              class="opacity-75"
+            />
+            <i
+              class="bi bi-telegram text-primary bg-white position-absolute top-0 fs-6 translate-middle-x rounded-circle"
+              style="line-height: 0; left: 90%"
+            >
+            </i>
+          </div>
+          <h5
+            class="offcanvas-title"
+            id="offcanvasBottomLabel"
+            class="text-center"
+          >
+            ငွေလွှဲ
+          </h5>
+        </div>
+        <div>
+          <i class="bi bi-question-circle"></i>
+        </div>
+      </div>
+      <div class="offcanvas-body small">
+        <form action="" class="">
+          <div class="align-middle">
+            <i class="bi bi-person-circle fs-2 text-secondary me-4"></i>
+            <div class="d-inline-block">
+              <label for="#phoneNumber" class="form-lael">ငွေလက်ခံသူ</label>
+              <input
+                type="text"
+                id="phoneNumber"
+                placeholder="ဖုန်းနံပါတ်ထည့်ပါ"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="">
+            <i class="bi bi-coin text-secondary fs-2 me-4"></i>
+            <div class="d-inline-block">
+              <label for="#amount" class="form-lael">ငွေပမာဏ</label>
+              <input
+                type="text"
+                id="amount"
+                placeholder="ငွေပမာဏကိုရိုက်ထည်ပါ"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="">
+            <i
+              class="bi bi-three-dots fs-2 me-4 border border-dark rounded-circle"
+            ></i>
+
+            <div class="d-inline-block">
+              <label for="#phoneNumber" class="form-lael"
+                >WavePay(or)Wave ဆိုင်</label
+              >
+              <input
+                type="text"
+                id="phoneNumber"
+                placeholder="ပေးပို့မည့် နည်းကိုရွေးချယ်ပါ"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="offcanavs-footer">
+        <button class="btn btn-secondary w-100">
+          <i class="bi bi-cursor"></i>သေချာပါသည်
+        </button>
+      </div>
+    </div>
+    <!-- footer nav  -->
+    <footer class="bg-white mt-auto pb-1">
+      <div class="container">
+        <ul class="list list-unstyled d-flex justify-content-between">
+          <li class="text-center nav-item">
+            <a href="index.html" class="text-decoration-none nav-link-active">
+              <i class="bi bi-house-fill"></i>
+              <p>ပင်မ</p></a
+            >
+          </li>
+          <li class="text-center nav-item">
+            <a href="myQr.html" class="text-decoration-none nav-link">
+              <i class="bi bi-qr-code"></i>
+              <p>My QR</p>
+            </a>
+          </li>
+          <li class="text-center nav-item">
+            <a href="#" class="text-decoration-none nav-link">
+              <i class="bi bi-qr-code-scan"></i>
+              <p>QR ပေး</p>
+            </a>
+          </li>
+          <li class="text-center nav-item">
+            <a href="#" class="text-decoration-none nav-link">
+              <i class="bi bi-shop"></i>
+              <p>Wave ဆိုင်များ</p>
+            </a>
+          </li>
+          <li class="text-center nav-item">
+            <a href="#" class="text-decoration-none nav-link"
+              ><i class="bi bi-envelope"></i>
+              <p>ဝင်စာ</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
